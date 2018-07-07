@@ -17,7 +17,7 @@ class Project(Model):
         return self.name
 
 class ProjectTask(Model):
-    __bund_key__ = 'suitecrm'
+    __bind_key__ = 'suitecrm'
     id = Column(CHAR(36), primary_key=True, nullable=False)
     name =  Column(String(50), nullable=False)
     assigned_user_id = Column(String(38))
