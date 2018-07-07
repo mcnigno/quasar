@@ -16,6 +16,7 @@ from .models import Project
 class ProjectView(ModelView):
     datamodel = SQLAInterface(Project)
     list_columns = ['id', 'name', 'estimated_start_date']
-
+    show_columns = ['id', 'name', 'estimated_start_date']
+    edit_columns = ['id', 'name', 'estimated_start_date']
     
 

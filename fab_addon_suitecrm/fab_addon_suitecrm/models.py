@@ -12,3 +12,6 @@ class Project(Model):
     estimated_end_date = Column(Date)
     status = Column(String(38))
     deleted = Column(String(38))
+
+    def __repr__(self):
+        return self.name
