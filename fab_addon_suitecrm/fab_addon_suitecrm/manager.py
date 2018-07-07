@@ -1,7 +1,7 @@
 import logging
 
 from flask_appbuilder.basemanager import BaseManager
-from .views import ProjectView
+from .views import ProjectView, ProjectTaskView
 from .models import Project
 #from flask_babelpkg import lazy_gettext as _
 
@@ -30,6 +30,7 @@ class MyAddOnManager(BaseManager):
             This method is called by AppBuilder when initializing, use it to add you views
         """
         self.appbuilder.add_view(ProjectView, "Projects", category='CRM')
+        self.appbuilder.add_view(ProjectTaskView, "Project Tasks", category='CRM')
         pass
 
     def pre_process(self):
