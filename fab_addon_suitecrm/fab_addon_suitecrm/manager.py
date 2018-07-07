@@ -2,7 +2,7 @@ import logging
 
 from flask_appbuilder.basemanager import BaseManager
 from .views import ProjectView, ProjectTaskView
-from .models import Project
+from .models import Project, PorjectTask
 #from flask_babelpkg import lazy_gettext as _
 
 
