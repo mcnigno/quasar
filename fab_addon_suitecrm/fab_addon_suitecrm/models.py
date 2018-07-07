@@ -16,7 +16,7 @@ class Project(Model):
     def __repr__(self):
         return self.name
 
-class PorjectTask(Model):
+class ProjectTask(Model):
     __bund_key__ = 'suitecrm'
     id = Column(CHAR(36), primary_key=True, nullable=False)
     name =  Column(String(50), nullable=False)
