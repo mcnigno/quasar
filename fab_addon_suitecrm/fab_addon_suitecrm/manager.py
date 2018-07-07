@@ -2,7 +2,7 @@ import logging
 from flask.ext.appbuilder.basemanager import BaseManager
 from .views import ProjectView
 from .models import Project
-from flask_babelpkg import lazy_gettext as _
+#from flask_babelpkg import lazy_gettext as _
 
 
 log = logging.getLogger(__name__)
