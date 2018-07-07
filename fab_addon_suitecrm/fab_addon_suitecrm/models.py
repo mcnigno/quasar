@@ -1,11 +1,11 @@
 from flask_appbuilder import Model
 from flask_appbuilder.models.mixins import AuditMixin, FileColumn, ImageColumn
-from sqlalchemy import Column, Integer, String, ForeignKey, Date, Sequence
+from sqlalchemy import Column, Integer, String, ForeignKey, Date, Sequence, CHAR
 from sqlalchemy.orm import relationship
  
 class Project(Model):
     __bind_key__ = 'suitecrm'
-    id = Column(String(50), primary_key=True)
+    id = Column(CHAR(36), primary_key=True, nullable=False)
     name =  Column(String(50), nullable=False)
     assigned_user_id = Column(String(38))
     estimated_start_date = Column(Date)
