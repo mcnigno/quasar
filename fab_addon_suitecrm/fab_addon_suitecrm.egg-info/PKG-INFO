@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: fab-addon-suitecrm
+Version: 0.0.1
+Summary: Small text to resume your addon
+Home-page: https://github.com/dpgaspar/flask-appbuilder/
+Author: You name goes here
+Author-email: youiremail@somewhere.com
+License: BSD
+Description: Base Skeleton to start your AddOn for Flask-AppBuilder
+        ------------------------------------------------------
+        
+        ------------------------------------------------------
+        
+        THIS IS IN ALPHA STATE, DON'T TRY IT YET
+        ------------------------------------------------------
+        
+        
+        - Install it::
+        
+        	pip install flask-appbuilder
+        	git clone https://github.com/dpgaspar/Flask-AppBuilder-Skeleton-AddOn.git
+        
+        - Develop and Test....
+        
+        - Make it Public::
+        
+        	python setup.py sdist upload
+        
+        
+        That's it!!
+        
+        
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

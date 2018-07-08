@@ -1,0 +1,12 @@
+README.rst
+fab_addon_suitecrm/__init__.py
+fab_addon_suitecrm/manager.py
+fab_addon_suitecrm/models.py
+fab_addon_suitecrm/version.py
+fab_addon_suitecrm/views.py
+fab_addon_suitecrm.egg-info/PKG-INFO
+fab_addon_suitecrm.egg-info/SOURCES.txt
+fab_addon_suitecrm.egg-info/dependency_links.txt
+fab_addon_suitecrm.egg-info/not-zip-safe
+fab_addon_suitecrm.egg-info/requires.txt
+fab_addon_suitecrm.egg-info/top_level.txt
