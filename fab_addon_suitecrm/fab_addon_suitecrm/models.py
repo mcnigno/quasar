@@ -5,6 +5,8 @@ from sqlalchemy.orm import relationship
  
 class Project(Model):
     __bind_key__ = 'suitecrm'
+    #__table_args__ = {'info': dict(is_view=True)}
+
     id = Column(CHAR(36), primary_key=True, nullable=False)
     name =  Column(String(50), nullable=False)
     assigned_user_id = Column(String(38))
@@ -18,6 +20,8 @@ class Project(Model):
 
 class ProjectTask(Model):
     __bind_key__ = 'suitecrm'
+    #__table_args__ = {'info': dict(is_view=True)}
+
     id = Column(CHAR(36), primary_key=True, nullable=False)
     name =  Column(String(50), nullable=False)
     assigned_user_id = Column(String(38))
