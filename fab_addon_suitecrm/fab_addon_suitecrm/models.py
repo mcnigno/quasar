@@ -30,7 +30,7 @@ class ProjectTask(Model):
         return self.name
 
 class Doctype(Model, AuditMixin):
-    __bind_key__ = 'crm_ext'
+    __bind_key__ = 'crmext'
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(50), nullable=False)
     description = Column(Text)
@@ -39,7 +39,7 @@ class Doctype(Model, AuditMixin):
         return self.name
 
 class MyMetrics(Model, AuditMixin):
-    __bind_key__ = 'crm_ext'
+    __bind_key__ = 'crmext'
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(50), nullable=False)
     description = Column(Text)
@@ -56,7 +56,7 @@ class MyMetrics(Model, AuditMixin):
 
 
 class MetricSlug(Model, AuditMixin):
-    __bind_key__ = 'crm_ext'
+    __bind_key__ = 'crmext'
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(50), nullable=False)
     doctype_id = Column(CHAR(36), ForeignKey('doctype.id'))
