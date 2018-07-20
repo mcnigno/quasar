@@ -25,12 +25,18 @@ class ProjectTask(Model):
     deleted = Column(String(38))
     project_id = Column(CHAR(36), ForeignKey('project.id'))
     project = relationship('Project')
+    
+    def __repr__(self):
+        return self.name
 
 class Doctype(Model, AuditMixin):
     __bind_key__ = 'crm_ext'
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(50), nullable=False)
     description = Column(Text)
+
+    def __repr__(self):
+        return self.name
 
 class MyMetrics(Model, AuditMixin):
     __bind_key__ = 'crm_ext'
@@ -44,6 +50,9 @@ class MyMetrics(Model, AuditMixin):
     doctype_id = Column(CHAR(36), ForeignKey('doctype.id'))
     doctype = relationship('Doctype')
 
+    def __repr__(self):
+        return self.name
+
 
 
 class MetricSlug(Model, AuditMixin):
@@ -55,6 +64,9 @@ class MetricSlug(Model, AuditMixin):
     date = Column(Date, nullable=False)
     project_id = Column(CHAR(36), ForeignKey('project.id'))
     project = relationship('Project')
+
+    def __repr__(self):
+        return self.name
 
 
 
