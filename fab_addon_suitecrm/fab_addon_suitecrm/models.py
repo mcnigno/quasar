@@ -5,7 +5,7 @@ from sqlalchemy.orm import relationship
  
 class Project(Model):
     __bind_key__ = 'suitecrm'
-    #__table_args__ = {'info': dict(is_view=True)}
+    __table_args__ = {'info': dict(is_view=True)}
 
     id = Column(CHAR(36), primary_key=True, nullable=False)
     name =  Column(String(50), nullable=False)
@@ -20,7 +20,7 @@ class Project(Model):
 
 class ProjectTask(Model):
     __bind_key__ = 'suitecrm'
-    #__table_args__ = {'info': dict(is_view=True)}
+    __table_args__ = {'info': dict(is_view=True)}
 
     id = Column(CHAR(36), primary_key=True, nullable=False)
     name =  Column(String(50), nullable=False)
