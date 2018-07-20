@@ -45,7 +45,7 @@ class MyMetrics(Model, AuditMixin):
     description = Column(Text)
     active = Column(Boolean())
     value = Column(Integer())
-    project_id = Column(CHAR(36), ForeignKey('project.id'), info={'bind_key': 'suitecrm'})
+    project_id = Column(CHAR(36), ForeignKey('project.id'))
     project = relationship('Project')
     doctype_id = Column(CHAR(36), ForeignKey('doctype.id'))
     doctype = relationship('Doctype')
@@ -62,7 +62,7 @@ class MetricSlug(Model, AuditMixin):
     doctype_id = Column(CHAR(36), ForeignKey('doctype.id'))
     doctype = relationship('Doctype')
     date = Column(Date, nullable=False)
-    project_id = Column(CHAR(36), ForeignKey('project.id'), info={'bind_key': 'suitecrm'})
+    project_id = Column(CHAR(36), ForeignKey('project.id'))
     project = relationship('Project')
 
     def __repr__(self):

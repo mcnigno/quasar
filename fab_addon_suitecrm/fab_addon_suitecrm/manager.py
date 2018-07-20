@@ -34,6 +34,7 @@ class MyAddOnManager(BaseManager):
         self.appbuilder.add_view(MetricsView, "Metrics", category='CRM')
         self.appbuilder.add_view(MetricSlugView, "Metric Slug", category='CRM')
         self.appbuilder.add_view(DoctypeView, "DocType", category='CRM')
+        
 
         pass
 
