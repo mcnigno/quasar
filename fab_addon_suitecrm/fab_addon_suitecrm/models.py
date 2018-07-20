@@ -28,7 +28,7 @@ class ProjectTask(Model):
 
 class Doctype(Model, AuditMixin):
     id = Column(Integer, primary_key=True, nullable=False)
-    name = Column(Strig(50), nullable=False)
+    name = Column(String(50), nullable=False)
     description = Column(Text)
 
 class Metrics(Model, AuditMixin):
