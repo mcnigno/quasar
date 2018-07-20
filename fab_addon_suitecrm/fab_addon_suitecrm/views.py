@@ -1,7 +1,7 @@
 from flask import render_template
 from flask_appbuilder.models.sqla.interface import SQLAInterface
 from flask_appbuilder import ModelView
-from .models import Project, ProjectTask, Metrics, Doctype, MetricSlug
+from .models import Project, ProjectTask, MyMetrics, Doctype, MetricSlug
 
 """
     Create your Views (but don't register them here, do it on the manager::
@@ -17,7 +17,7 @@ class ProjectTaskView(ModelView):
     list_columns = ['id','name']
 
 class MetricsView(ModelView):
-    datamodel = SQLAInterface(Metrics)
+    datamodel = SQLAInterface(MyMetrics)
 
 class DoctypeView(ModelView):
     datamodel = SQLAInterface(Doctype)

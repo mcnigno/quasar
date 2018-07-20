@@ -27,11 +27,13 @@ class ProjectTask(Model):
     project = relationship('Project')
 
 class Doctype(Model, AuditMixin):
+    __bind_key__ = 'crm_ext'
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(50), nullable=False)
     description = Column(Text)
 
-class Metrics(Model, AuditMixin):
+class MyMetrics(Model, AuditMixin):
+    __bind_key__ = 'crm_ext'
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(50), nullable=False)
     description = Column(Text)
@@ -45,6 +47,7 @@ class Metrics(Model, AuditMixin):
 
 
 class MetricSlug(Model, AuditMixin):
+    __bind_key__ = 'crm_ext'
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(50), nullable=False)
     doctype_id = Column(CHAR(36), ForeignKey('doctype.id'))
