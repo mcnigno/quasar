@@ -46,7 +46,7 @@ class Metrics(Model, AuditMixin):
 
 class MetricSlug(Model, AuditMixin):
     id = Column(Integer, primary_key=True, nullable=False)
-    name = Column(Strig(50), nullable=False)
+    name = Column(String(50), nullable=False)
     doctype_id = Column(CHAR(36), ForeignKey('doctype.id'))
     doctype = relationship('Doctype')
     date = Column(Date, nullable=False)
