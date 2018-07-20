@@ -28,7 +28,7 @@ class ProjectTask(Model):
 
 class Metrics(Model, AuditMixin):
     id = Column(Integer, primary_key=True, nullable=False)
-    name = Column(Strig(50), nullable=False)
+    name = Column(String(50), nullable=False)
     description = Column(Text)
     active = Column(Boolean())
     value = Column(Integer())
