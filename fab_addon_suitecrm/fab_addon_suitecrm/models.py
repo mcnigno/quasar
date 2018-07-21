@@ -3,17 +3,11 @@ from flask_appbuilder.models.mixins import AuditMixin, FileColumn, ImageColumn
 from sqlalchemy import Column, Integer, String, ForeignKey, Date, Sequence, CHAR, Boolean, Text
 from sqlalchemy.orm import relationship
 
-exclude_tables = ['project', 'projecttask']
-def include_object(object, name, type_, reflected, compare_to):
-    print(name)
-    if type_ == "table" and name in exclude_tables:
-        return False
-    else:
-        return True
 
 class Project(Model):
     __bind_key__ = 'suitecrm'
-    __table_args__ = {'info': dict(is_view=True)}
+    #__table_args__ = {'info': dict(is_view=True)}
+    __tablename__ = 'project'
 
     id = Column(CHAR(36), primary_key=True, nullable=False)
     name =  Column(String(50), nullable=False)
