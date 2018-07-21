@@ -34,7 +34,7 @@ class ProjectTask(Model):
     
     def __repr__(self):
         return self.name
-"""
+
 class Doctype(Model, AuditMixin):
     __bind_key__ = 'crmext'
     id = Column(Integer, primary_key=True, nullable=False)
@@ -75,7 +75,7 @@ class MetricSlug(Model, AuditMixin):
         return self.name
 
 
-"""
+
 
 
 
