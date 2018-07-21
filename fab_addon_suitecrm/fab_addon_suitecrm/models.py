@@ -3,7 +3,7 @@ from flask_appbuilder.models.mixins import AuditMixin, FileColumn, ImageColumn
 from sqlalchemy import Column, Integer, String, ForeignKey, Date, Sequence, CHAR, Boolean, Text
 from sqlalchemy.orm import relationship
 
-
+'''
 class Project(Model):
     __bind_key__ = 'suitecrm'
     __table_args__ = {'info': dict(is_view=True)}
@@ -74,7 +74,7 @@ class MetricSlug(Model, AuditMixin):
     def __repr__(self):
         return self.name
 
-
+'''
 
 
 

@@ -11,7 +11,7 @@ from .models import Project, ProjectTask, MyMetrics, Doctype, MetricSlug
         datamodel = SQLAInterface(MyModel)
 
     
-"""
+
 class ProjectTaskView(ModelView):
     datamodel = SQLAInterface(ProjectTask)
     list_columns = ['id','name']
@@ -34,5 +34,5 @@ class ProjectView(ModelView):
     related_views = [MetricsView, MetricSlugView]
 
 
-    
+"""
 
