@@ -3,10 +3,10 @@ from flask_appbuilder.models.mixins import AuditMixin, FileColumn, ImageColumn
 from sqlalchemy import Column, Integer, String, ForeignKey, Date, Sequence, CHAR, Boolean, Text
 from sqlalchemy.orm import relationship
 
-'''
+
 class Project(Model):
     __bind_key__ = 'suitecrm'
-    #__table_args__ = {'info': dict(is_view=True)}
+    __table_args__ = {'info': dict(is_view=True)}
     __tablename__ = 'project'
 
     id = Column(CHAR(36), primary_key=True, nullable=False)
@@ -34,7 +34,7 @@ class ProjectTask(Model):
     
     def __repr__(self):
         return self.name
-'''
+
 class Doctype(Model, AuditMixin):
     __bind_key__ = 'crmext'
     id = Column(Integer, primary_key=True, nullable=False)
