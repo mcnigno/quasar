@@ -13,11 +13,11 @@ from .models import Project, ProjectTask
 
     
 """
-"""
+
 class ProjectTaskView(ModelView):
     datamodel = SQLAInterface(ProjectTask)
     list_columns = ['id','name']
-
+"""
 class MetricsView(ModelView):
     datamodel = SQLAInterface(MyMetrics)
 
@@ -26,15 +26,15 @@ class DoctypeView(ModelView):
 
 class MetricSlugView(ModelView):
     datamodel = SQLAInterface(MetricSlug)
-
+"""
 class ProjectView(ModelView):
     datamodel = SQLAInterface(Project)
     list_columns = ['id', 'name', 'estimated_start_date','status']
     show_columns = ['id', 'name', 'estimated_start_date']
     edit_columns = ['id', 'name', 'estimated_start_date']
 
-    related_views = [MetricsView, MetricSlugView]
+    #related_views = [MetricsView, MetricSlugView]
 
-"""
+
     
 
