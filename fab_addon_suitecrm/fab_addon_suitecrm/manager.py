@@ -26,15 +26,15 @@ class MyAddOnManager(BaseManager):
         self.appbuilder.get_app.config.setdefault('MYADDON_KEY', 'SOME VALUE')
 
     def register_views(self):
-        """
-            This method is called by AppBuilder when initializing, use it to add you views
+        
+        #This method is called by AppBuilder when initializing, use it to add you views
         
         self.appbuilder.add_view(ProjectView, "Projects", category='CRM')
         self.appbuilder.add_view(ProjectTaskView, "Project Tasks", category='CRM')
         self.appbuilder.add_view(MetricsView, "Metrics", category='CRM')
         self.appbuilder.add_view(MetricSlugView, "Metric Slug", category='CRM')
         self.appbuilder.add_view(DoctypeView, "DocType", category='CRM')
-        """
+        
 
         pass
 
