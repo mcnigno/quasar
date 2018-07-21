@@ -2,12 +2,12 @@ from flask_appbuilder import Model
 from flask_appbuilder.models.mixins import AuditMixin, FileColumn, ImageColumn
 from sqlalchemy import Column, Integer, String, ForeignKey, Date, Sequence, CHAR, Boolean, Text
 from sqlalchemy.orm import relationship
-"""
+
 
 class Project(Model):
     __bind_key__ = 'suitecrm'
-    __table_args__ = {'info': dict(is_view=True)}
-    __tablename__ = 'project'
+    #__table_args__ = {'info': dict(is_view=True)}
+    #__tablename__ = 'project'
 
     id = Column(CHAR(36), primary_key=True, nullable=False)
     name =  Column(String(50), nullable=False)
@@ -74,7 +74,7 @@ class MetricSlug(Model, AuditMixin):
     def __repr__(self):
         return self.name
 
-"""
+
 
 
 

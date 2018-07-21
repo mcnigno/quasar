@@ -1,9 +1,10 @@
 import logging
 
 from flask_appbuilder.basemanager import BaseManager
-#from .views import ProjectView, ProjectTaskView, MetricsView, MetricSlugView, DoctypeView
-#from .models import MyMetrics, MetricSlug, Doctype, Project, ProjectTask
+from views import ProjectView, ProjectTaskView, MetricsView, MetricSlugView, DoctypeView
+from models import MyMetrics, MetricSlug, Doctype, Project, ProjectTask
 #from flask_babelpkg import lazy_gettext as _
+
 
 
 log = logging.getLogger(__name__)
@@ -29,7 +30,7 @@ class MyAddOnManager(BaseManager):
         
         #This method is called by AppBuilder when initializing, use it to add you views
         
-        """
+        
         self.appbuilder.add_view(ProjectView, "Projects", category='CRM')
         self.appbuilder.add_view(ProjectTaskView, "Project Tasks", category='CRM')
         
@@ -37,7 +38,7 @@ class MyAddOnManager(BaseManager):
         self.appbuilder.add_view(MetricsView, "Metrics", category='CRM')
         self.appbuilder.add_view(MetricSlugView, "Metric Slug", category='CRM')
         self.appbuilder.add_view(DoctypeView, "DocType", category='CRM')
-        """
+        
 
         pass
 
