@@ -10,6 +10,8 @@ from .models import Project, ProjectTask, MyMetrics, Doctype, MetricSlug
 class MyModelView(ModelView):
     datamodel = SQLAInterface(MyModel)
 '''
+
+'''
     
 
 class ProjectTaskView(ModelView):
