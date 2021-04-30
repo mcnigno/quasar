@@ -81,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'quasar',
-        'USER': 'root',
-        'PASSWORD': 'lollipop300777', 
+        'USER': 'quasar_db_user',
+        'PASSWORD': 'Quasar300777', 
         #'HOST': '127.0.0.1',
         #'PORT': '5432',
     }
