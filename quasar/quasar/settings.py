@@ -26,7 +26,7 @@ SECRET_KEY = '#r_og4(q6auo2@x27+a8=bdd(pcp3m&zlpmeyrb%fmfr19n!ml'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.16.0.81','localhost','ts.quasarpm.com']   
+ALLOWED_HOSTS = ['172.16.0.81','localhost','ts.quasarpm.com','192.168.1.254']   
 
 
 # Application definition
