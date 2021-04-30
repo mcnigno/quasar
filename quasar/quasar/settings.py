@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'quasar.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'quasar',
-        'USER': 'postgres',
+        'USER': 'root',
         'PASSWORD': 'lollipop300777', 
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        #'HOST': '127.0.0.1',
+        #'PORT': '5432',
     }
 }
 '''
