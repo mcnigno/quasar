@@ -1,0 +1,1 @@
+docker run --name postgres -v ~/dockerapp/djtime/postgres/data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=lollipop300777 postgres
