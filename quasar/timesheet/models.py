@@ -87,6 +87,7 @@ class Activity(models.Model):
     name = models.CharField(max_length=70, null=False)
     project = models.ForeignKey(Project, on_delete=models.CASCADE) 
     user = models.ManyToManyField(User, related_name='user_activity')
+    estimated_time = models.IntegerField(default=5, help_text='Estimated time in minutes.')
 
     def __str__(self):
         return self.name + ' for ' + str(self.project)
@@ -249,7 +250,7 @@ class CommentsAdmin(admin.ModelAdmin):
 class TaskInline(NestedTabularInline):
     model = Task
     extra = 0
-    inlines = [CommentsInline]
+    #inlines = [CommentsInline]
     #list_filter = ([UserFilter])
     #readonly_fields = ('from_time',)
     fields = ['from_time','to_time','activity', 'item','reference']
